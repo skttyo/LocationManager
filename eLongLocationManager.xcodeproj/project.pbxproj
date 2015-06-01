@@ -1,0 +1,479 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		002A1C341B15747700512BC9 /* eLongLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = 002A1C331B15747700512BC9 /* eLongLocation.m */; };
+		00A280551B15DEDE0015768F /* INTUViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00A280541B15DEDE0015768F /* INTUViewController.m */; };
+		00A280581B15DEE60015768F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00A280561B15DEE60015768F /* Main.storyboard */; };
+		00F3CC321B1481D80029994D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 00F3CC311B1481D80029994D /* main.m */; };
+		00F3CC351B1481D80029994D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 00F3CC341B1481D80029994D /* AppDelegate.m */; };
+		00F3CC3D1B1481D90029994D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00F3CC3C1B1481D80029994D /* Images.xcassets */; };
+		00F3CC401B1481D90029994D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 00F3CC3E1B1481D90029994D /* LaunchScreen.xib */; };
+		00F3CC4C1B1481D90029994D /* eLongLocationManagerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00F3CC4B1B1481D90029994D /* eLongLocationManagerTests.m */; };
+		00F3CC5D1B1483B30029994D /* INTULocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 00F3CC591B1483B30029994D /* INTULocationManager.m */; };
+		00F3CC5E1B1483B30029994D /* INTULocationRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 00F3CC5B1B1483B30029994D /* INTULocationRequest.m */; };
+		00F3CC611B1483E90029994D /* eLongLocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 00F3CC601B1483E90029994D /* eLongLocationManager.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		00F3CC461B1481D90029994D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 00F3CC241B1481D80029994D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 00F3CC2B1B1481D80029994D;
+			remoteInfo = eLongLocationManager;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		002A1C321B15747700512BC9 /* eLongLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = eLongLocation.h; sourceTree = "<group>"; };
+		002A1C331B15747700512BC9 /* eLongLocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = eLongLocation.m; sourceTree = "<group>"; };
+		00A280531B15DEDE0015768F /* INTUViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = INTUViewController.h; sourceTree = "<group>"; };
+		00A280541B15DEDE0015768F /* INTUViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = INTUViewController.m; sourceTree = "<group>"; };
+		00A280571B15DEE60015768F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		00F3CC2C1B1481D80029994D /* eLongLocationManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = eLongLocationManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		00F3CC301B1481D80029994D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		00F3CC311B1481D80029994D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		00F3CC331B1481D80029994D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		00F3CC341B1481D80029994D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		00F3CC3C1B1481D80029994D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		00F3CC3F1B1481D90029994D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		00F3CC451B1481D90029994D /* eLongLocationManagerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = eLongLocationManagerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		00F3CC4A1B1481D90029994D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		00F3CC4B1B1481D90029994D /* eLongLocationManagerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = eLongLocationManagerTests.m; sourceTree = "<group>"; };
+		00F3CC571B1483B30029994D /* INTULocationManager+Internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "INTULocationManager+Internal.h"; sourceTree = "<group>"; };
+		00F3CC581B1483B30029994D /* INTULocationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = INTULocationManager.h; sourceTree = "<group>"; };
+		00F3CC591B1483B30029994D /* INTULocationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = INTULocationManager.m; sourceTree = "<group>"; };
+		00F3CC5A1B1483B30029994D /* INTULocationRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = INTULocationRequest.h; sourceTree = "<group>"; };
+		00F3CC5B1B1483B30029994D /* INTULocationRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = INTULocationRequest.m; sourceTree = "<group>"; };
+		00F3CC5C1B1483B30029994D /* INTULocationRequestDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = INTULocationRequestDefines.h; sourceTree = "<group>"; };
+		00F3CC5F1B1483E90029994D /* eLongLocationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = eLongLocationManager.h; sourceTree = "<group>"; };
+		00F3CC601B1483E90029994D /* eLongLocationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = eLongLocationManager.m; sourceTree = "<group>"; };
+		00F3CC621B1484020029994D /* eLongLocationDefines.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = eLongLocationDefines.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		00F3CC291B1481D80029994D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		00F3CC421B1481D90029994D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		00F3CC231B1481D80029994D = {
+			isa = PBXGroup;
+			children = (
+				00F3CC2E1B1481D80029994D /* eLongLocationManager */,
+				00F3CC481B1481D90029994D /* eLongLocationManagerTests */,
+				00F3CC2D1B1481D80029994D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		00F3CC2D1B1481D80029994D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				00F3CC2C1B1481D80029994D /* eLongLocationManager.app */,
+				00F3CC451B1481D90029994D /* eLongLocationManagerTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		00F3CC2E1B1481D80029994D /* eLongLocationManager */ = {
+			isa = PBXGroup;
+			children = (
+				00A280561B15DEE60015768F /* Main.storyboard */,
+				00A280531B15DEDE0015768F /* INTUViewController.h */,
+				00A280541B15DEDE0015768F /* INTUViewController.m */,
+				00F3CC551B1483B30029994D /* eLongLocationManager */,
+				00F3CC331B1481D80029994D /* AppDelegate.h */,
+				00F3CC341B1481D80029994D /* AppDelegate.m */,
+				00F3CC3C1B1481D80029994D /* Images.xcassets */,
+				00F3CC3E1B1481D90029994D /* LaunchScreen.xib */,
+				00F3CC2F1B1481D80029994D /* Supporting Files */,
+			);
+			path = eLongLocationManager;
+			sourceTree = "<group>";
+		};
+		00F3CC2F1B1481D80029994D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				00F3CC301B1481D80029994D /* Info.plist */,
+				00F3CC311B1481D80029994D /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		00F3CC481B1481D90029994D /* eLongLocationManagerTests */ = {
+			isa = PBXGroup;
+			children = (
+				00F3CC4B1B1481D90029994D /* eLongLocationManagerTests.m */,
+				00F3CC491B1481D90029994D /* Supporting Files */,
+			);
+			path = eLongLocationManagerTests;
+			sourceTree = "<group>";
+		};
+		00F3CC491B1481D90029994D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				00F3CC4A1B1481D90029994D /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		00F3CC551B1483B30029994D /* eLongLocationManager */ = {
+			isa = PBXGroup;
+			children = (
+				00F3CC561B1483B30029994D /* INTULocationManager */,
+				00F3CC5F1B1483E90029994D /* eLongLocationManager.h */,
+				00F3CC601B1483E90029994D /* eLongLocationManager.m */,
+				00F3CC621B1484020029994D /* eLongLocationDefines.h */,
+				002A1C321B15747700512BC9 /* eLongLocation.h */,
+				002A1C331B15747700512BC9 /* eLongLocation.m */,
+			);
+			path = eLongLocationManager;
+			sourceTree = "<group>";
+		};
+		00F3CC561B1483B30029994D /* INTULocationManager */ = {
+			isa = PBXGroup;
+			children = (
+				00F3CC571B1483B30029994D /* INTULocationManager+Internal.h */,
+				00F3CC581B1483B30029994D /* INTULocationManager.h */,
+				00F3CC591B1483B30029994D /* INTULocationManager.m */,
+				00F3CC5A1B1483B30029994D /* INTULocationRequest.h */,
+				00F3CC5B1B1483B30029994D /* INTULocationRequest.m */,
+				00F3CC5C1B1483B30029994D /* INTULocationRequestDefines.h */,
+			);
+			path = INTULocationManager;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		00F3CC2B1B1481D80029994D /* eLongLocationManager */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 00F3CC4F1B1481D90029994D /* Build configuration list for PBXNativeTarget "eLongLocationManager" */;
+			buildPhases = (
+				00F3CC281B1481D80029994D /* Sources */,
+				00F3CC291B1481D80029994D /* Frameworks */,
+				00F3CC2A1B1481D80029994D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = eLongLocationManager;
+			productName = eLongLocationManager;
+			productReference = 00F3CC2C1B1481D80029994D /* eLongLocationManager.app */;
+			productType = "com.apple.product-type.application";
+		};
+		00F3CC441B1481D90029994D /* eLongLocationManagerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 00F3CC521B1481D90029994D /* Build configuration list for PBXNativeTarget "eLongLocationManagerTests" */;
+			buildPhases = (
+				00F3CC411B1481D90029994D /* Sources */,
+				00F3CC421B1481D90029994D /* Frameworks */,
+				00F3CC431B1481D90029994D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				00F3CC471B1481D90029994D /* PBXTargetDependency */,
+			);
+			name = eLongLocationManagerTests;
+			productName = eLongLocationManagerTests;
+			productReference = 00F3CC451B1481D90029994D /* eLongLocationManagerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		00F3CC241B1481D80029994D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = elong;
+				TargetAttributes = {
+					00F3CC2B1B1481D80029994D = {
+						CreatedOnToolsVersion = 6.3.1;
+					};
+					00F3CC441B1481D90029994D = {
+						CreatedOnToolsVersion = 6.3.1;
+						TestTargetID = 00F3CC2B1B1481D80029994D;
+					};
+				};
+			};
+			buildConfigurationList = 00F3CC271B1481D80029994D /* Build configuration list for PBXProject "eLongLocationManager" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 00F3CC231B1481D80029994D;
+			productRefGroup = 00F3CC2D1B1481D80029994D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				00F3CC2B1B1481D80029994D /* eLongLocationManager */,
+				00F3CC441B1481D90029994D /* eLongLocationManagerTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		00F3CC2A1B1481D80029994D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00A280581B15DEE60015768F /* Main.storyboard in Resources */,
+				00F3CC401B1481D90029994D /* LaunchScreen.xib in Resources */,
+				00F3CC3D1B1481D90029994D /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		00F3CC431B1481D90029994D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		00F3CC281B1481D80029994D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00F3CC5D1B1483B30029994D /* INTULocationManager.m in Sources */,
+				002A1C341B15747700512BC9 /* eLongLocation.m in Sources */,
+				00F3CC351B1481D80029994D /* AppDelegate.m in Sources */,
+				00F3CC5E1B1483B30029994D /* INTULocationRequest.m in Sources */,
+				00A280551B15DEDE0015768F /* INTUViewController.m in Sources */,
+				00F3CC611B1483E90029994D /* eLongLocationManager.m in Sources */,
+				00F3CC321B1481D80029994D /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		00F3CC411B1481D90029994D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00F3CC4C1B1481D90029994D /* eLongLocationManagerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		00F3CC471B1481D90029994D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 00F3CC2B1B1481D80029994D /* eLongLocationManager */;
+			targetProxy = 00F3CC461B1481D90029994D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		00A280561B15DEE60015768F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				00A280571B15DEE60015768F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		00F3CC3E1B1481D90029994D /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				00F3CC3F1B1481D90029994D /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		00F3CC4D1B1481D90029994D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		00F3CC4E1B1481D90029994D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		00F3CC501B1481D90029994D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = eLongLocationManager/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		00F3CC511B1481D90029994D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = eLongLocationManager/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		00F3CC531B1481D90029994D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = eLongLocationManagerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/eLongLocationManager.app/eLongLocationManager";
+			};
+			name = Debug;
+		};
+		00F3CC541B1481D90029994D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = eLongLocationManagerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/eLongLocationManager.app/eLongLocationManager";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		00F3CC271B1481D80029994D /* Build configuration list for PBXProject "eLongLocationManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00F3CC4D1B1481D90029994D /* Debug */,
+				00F3CC4E1B1481D90029994D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		00F3CC4F1B1481D90029994D /* Build configuration list for PBXNativeTarget "eLongLocationManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00F3CC501B1481D90029994D /* Debug */,
+				00F3CC511B1481D90029994D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		00F3CC521B1481D90029994D /* Build configuration list for PBXNativeTarget "eLongLocationManagerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00F3CC531B1481D90029994D /* Debug */,
+				00F3CC541B1481D90029994D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 00F3CC241B1481D80029994D /* Project object */;
+}
