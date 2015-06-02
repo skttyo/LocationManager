@@ -37,14 +37,14 @@
 		00A280541B15DEDE0015768F /* INTUViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = INTUViewController.m; sourceTree = "<group>"; };
 		00A280571B15DEE60015768F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		00F3CC2C1B1481D80029994D /* eLongLocationManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = eLongLocationManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		00F3CC301B1481D80029994D /* Info.plis */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Info.plis; sourceTree = "<group>"; };
+		00F3CC301B1481D80029994D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00F3CC311B1481D80029994D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		00F3CC331B1481D80029994D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		00F3CC341B1481D80029994D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		00F3CC3C1B1481D80029994D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		00F3CC3F1B1481D90029994D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		00F3CC451B1481D90029994D /* eLongLocationManagerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = eLongLocationManagerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		00F3CC4A1B1481D90029994D /* Info.plis */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Info.plis; sourceTree = "<group>"; };
+		00F3CC4A1B1481D90029994D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00F3CC4B1B1481D90029994D /* eLongLocationManagerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = eLongLocationManagerTests.m; sourceTree = "<group>"; };
 		00F3CC571B1483B30029994D /* INTULocationManager+Internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "INTULocationManager+Internal.h"; sourceTree = "<group>"; };
 		00F3CC581B1483B30029994D /* INTULocationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = INTULocationManager.h; sourceTree = "<group>"; };
@@ -112,7 +112,7 @@
 		00F3CC2F1B1481D80029994D /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				00F3CC301B1481D80029994D /* Info.plis */,
+				00F3CC301B1481D80029994D /* Info.plist */,
 				00F3CC311B1481D80029994D /* main.m */,
 			);
 			name = "Supporting Files";
@@ -130,7 +130,7 @@
 		00F3CC491B1481D90029994D /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				00F3CC4A1B1481D90029994D /* Info.plis */,
+				00F3CC4A1B1481D90029994D /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
