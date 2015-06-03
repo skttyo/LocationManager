@@ -38,7 +38,7 @@
 @property (nonatomic, readonly) BOOL abroad;
 
 /**
- *  当前定位城市，市级别城市(名称不包含“市”)
+ *  当前定位城市，市级别城市(去掉了“市”，eg:北京市 >> 北京)
  */
 @property (nonatomic, readonly) NSString *city;
 

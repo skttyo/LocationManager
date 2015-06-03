@@ -91,12 +91,11 @@ static inline void wgs84ToGCJ_02WithLatitudeLongitude(double *lat, double *lon) 
     double lat = rawLocation.coordinate.latitude;
     // 把坐标点范围锁定在国内，排除国外的情况
     if (lon > 72.004 && lon < 137.8347 && lat > 0.8293 && lat < 55.8271) {
-        // 纠偏处理
+        // 纠偏处理 火星坐标
         wgs84ToGCJ_02WithLatitudeLongitude(&lat, &lon);
         self.coordinate = CLLocationCoordinate2DMake(lat, lon);
     }
     
-    // 火星坐标
     CLLocation *location = [[CLLocation alloc] initWithLatitude:self.coordinate.latitude
                                                       longitude:self.coordinate.longitude];
     [self reverseGeocodeLocation:location];
@@ -154,23 +153,36 @@ static inline void wgs84ToGCJ_02WithLatitudeLongitude(double *lat, double *lon) 
             thoroughfare = [thoroughfare stringByAppendingString:placemark.subThoroughfare];
         }
         
-        //位置名 eg:星科大厦
+        //位置名 可能是建筑物名称(eg:星科大厦)，也有可能是地址全称(eg:中国上海市黄浦区南京东路街道人民广场延安东路)
         NSString *name = [placemark.name hasValue] ? placemark.name : @"";
         
+        if ([thoroughfare hasValue] && [name hasSuffix:thoroughfare]) {
+            //如果name是地址全称，将其置空
+            name = @"";
+        }
+        else {
+            NSArray *array = @[@"中国", administrativeArea, locality, subLocality];
+            //去看name中的行政信息
+            for (NSString *string in array) {
+                if ([name hasPrefix:string]) {
+                    name = [name substringFromIndex:[name rangeOfString:string].length];
+                }
+            }
+        }
+        
+        //直辖市处理 eg: administrativeArea:北京市 locality:北京市市辖区
         if ([locality hasSuffix:@"市市辖区"]) {
             locality = @"";
         }
         self.address = [NSString stringWithFormat:@"%@%@%@%@%@", administrativeArea, locality, subLocality, thoroughfare, name];
 
-        NSArray * allKeys = placemark.addressDictionary.allKeys;
-        for (NSString * key in allKeys) {
+        //NSArray * allKeys = placemark.addressDictionary.allKeys;
+        //for (NSString * key in allKeys) {
          //NSLog(@"key = %@, value = %@", key, placemark.addressDictionary[key]);
-            if ([key isEqualToString:@"FormattedAddressLines"]) {
-                self.formattedAddressLines = [placemark.addressDictionary[key] componentsJoinedByString:@""];
-                if ([self.formattedAddressLines hasPrefix:@"中国"]) {
-                    self.formattedAddressLines = [self.formattedAddressLines substringFromIndex:2];
-                }
-            }
+        //}
+        self.formattedAddressLines = [placemark.addressDictionary[@"FormattedAddressLines"] componentsJoinedByString:@""];
+        if ([self.formattedAddressLines hasPrefix:@"中国"]) {
+            self.formattedAddressLines = [self.formattedAddressLines substringFromIndex:2];
         }
         
         if (self.reverseGeocodeLocationCompletionHandler) {
@@ -193,7 +205,8 @@ static inline void wgs84ToGCJ_02WithLatitudeLongitude(double *lat, double *lon) 
             city = [city substringToIndex:([city rangeOfString:@"市"]).location];
         }
     }
-    else if ([city hasPrefix:@"香港"]) {
+    
+    if ([city hasPrefix:@"香港"]) {
         city = @"香港";
     }
     else if ([city hasPrefix:@"澳门"] || [city hasPrefix:@"澳門"]) {

@@ -32,7 +32,7 @@
 {
     self = [super init];
     if (self) {
-        _locationManager = [INTULocationManager sharedInstance];
+        self.locationManager = [INTULocationManager sharedInstance];
     }
     return self;
 }
@@ -48,7 +48,7 @@
                                         delayUntilAuthorized:(BOOL)delayUntilAuthorized
                                                        block:(eLongLocationRequestBlock)block {
     return [self.locationManager requestLocationWithDesiredAccuracy:(INTULocationAccuracy)desiredAccuracy timeout:timeout delayUntilAuthorized:delayUntilAuthorized block:^(CLLocation *currentLocation, INTULocationAccuracy achievedAccuracy, INTULocationStatus status) {
-        if (currentLocation) {
+        if (currentLocation && status == INTULocationStatusSuccess) {
             eLongLocation *processedLocation = [[eLongLocation alloc] initWithCLLocation:currentLocation];
             __weak eLongLocation *weakProcessedLocation = processedLocation;
             processedLocation.reverseGeocodeLocationCompletionHandler = ^(NSError *error) {
@@ -68,7 +68,7 @@
 
 - (eLongLocationRequestID)subscribeToLocationUpdatesWithBlock:(eLongLocationRequestBlock)block {
     return [self.locationManager subscribeToLocationUpdatesWithBlock:^(CLLocation *currentLocation, INTULocationAccuracy achievedAccuracy, INTULocationStatus status) {
-        if (currentLocation) {
+        if (currentLocation && status == INTULocationStatusSuccess) {
             eLongLocation *processedLocation = [[eLongLocation alloc] initWithCLLocation:currentLocation];
             __weak eLongLocation *weakProcessedLocation = processedLocation;
             processedLocation.reverseGeocodeLocationCompletionHandler = ^(NSError *error) {
