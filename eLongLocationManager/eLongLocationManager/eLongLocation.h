@@ -48,7 +48,7 @@
 @property (nonatomic, readonly) NSString *address;
 
 /**
- *  当前定位地址全称（去掉了“中国”），为直接读取的数据，但这样读取包含了重复信息，eg: 北京市朝阳区酒仙桥街道酒仙桥酒仙桥中路
+ *  当前定位地址全称（去掉了“中国”），为直接读取的数据，但这样读取可能会有重复信息，eg: 北京市朝阳区酒仙桥街道酒仙桥酒仙桥中路
  */
 @property (nonatomic, readonly) NSString *formattedAddressLines;
 
