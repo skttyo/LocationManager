@@ -132,13 +132,13 @@ static inline void wgs84ToGCJ_02WithLatitudeLongitude(double *lat, double *lon) 
         NSString *administrativeArea = placemark.administrativeArea;
         //使用系统定义的字符串直接查询，记得导入AddressBook框架
         if (![administrativeArea hasValue]) {
-            administrativeArea = placemark.addressDictionary[(NSString *)kABPersonAddressStateKey];
+            administrativeArea = [placemark.addressDictionary[(NSString *)kABPersonAddressStateKey] hasValue] ? placemark.addressDictionary[(NSString *)kABPersonAddressStateKey] : @"";
         }
         
         // 市 eg:北京市市辖区、长沙市
         NSString *locality = placemark.locality;
         if (![locality hasValue]) {
-            locality = placemark.addressDictionary[(NSString *)kABPersonAddressCityKey];
+            locality = [placemark.addressDictionary[(NSString *)kABPersonAddressCityKey] hasValue] ? placemark.addressDictionary[(NSString *)kABPersonAddressCityKey] : @"";
         }
         self.city = [locality hasValue] ? locality : administrativeArea;
         
@@ -187,6 +187,7 @@ static inline void wgs84ToGCJ_02WithLatitudeLongitude(double *lat, double *lon) 
         
         if (self.reverseGeocodeLocationCompletionHandler) {
             self.reverseGeocodeLocationCompletionHandler(error);
+            self.reverseGeocodeLocationCompletionHandler = nil;
         }
     }];
 }
