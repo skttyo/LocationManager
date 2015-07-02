@@ -4,7 +4,7 @@
 
 ## Screenshot
 
-![screenshot](demo1.jpg) 
+![screenshot](demo1.jpg)
 
 ## Usage
 ####iOS8.0以下系统
