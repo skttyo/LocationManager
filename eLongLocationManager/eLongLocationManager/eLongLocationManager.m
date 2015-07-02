@@ -97,7 +97,7 @@
 
 + (UIAlertView *)showAlertViewWithStatus:(eLongLocationStatus)status delegate:(id<UIAlertViewDelegate>)delegate {
     NSString *message;
-    NSString *appName = [[NSBundle mainBundle] objectForInfoDictionaryKey:@"CFBundleName"];
+    NSString *appName = [[NSBundle mainBundle] objectForInfoDictionaryKey:@"CFBundleDisplayName"];
     switch (status) {
         case eLongLocationStatusSuccess: {
             return nil;

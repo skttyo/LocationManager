@@ -41,22 +41,8 @@ static inline void wgs84ToGCJ_02WithLatitudeLongitude(double *lat, double *lon) 
     *lon = *lon + dLon;
 }
 
-@interface  NSString (eLongCheckString)
-
-- (BOOL)hasValue;
-
-@end
-
-@implementation NSString (eLongCheckString)
-
-- (BOOL)hasValue {
-    if (self && [self isKindOfClass:[NSString class]] && [self stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]].length > 0) {
-        return YES;
-    }
-    return NO;
-}
-
-@end
+// 判断字符串是否有值
+#define SS_STRINGHASVALUE(str)     (str && [str isKindOfClass:[NSString class]] && [str stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]].length > 0)
 
 @interface eLongLocation ()
 @property (nonatomic, strong) CLLocation *rawLocation;
@@ -106,7 +92,7 @@ static inline void wgs84ToGCJ_02WithLatitudeLongitude(double *lat, double *lon) 
     CLGeocoder * geocoder = [[CLGeocoder alloc] init];
     [geocoder reverseGeocodeLocation:location completionHandler:^(NSArray *placemarks,NSError *error) {
         if (error) {
-            NSLog(@"获取定位信息失败， 失败原因 = %@", error.localizedDescription);
+            NSLog(@"位置反编码失败， 失败原因 = %@", error.localizedDescription);
         }
         // 取得第一个地标，地标中存储了详细的地址信息，注意：一个地名可能搜索出多个地址
         CLPlacemark *placemark = [placemarks firstObject];
@@ -131,32 +117,32 @@ static inline void wgs84ToGCJ_02WithLatitudeLongitude(double *lat, double *lon) 
         // 省 eg:北京市、湖南省
         NSString *administrativeArea = placemark.administrativeArea;
         //使用系统定义的字符串直接查询，记得导入AddressBook框架
-        if (![administrativeArea hasValue]) {
-            administrativeArea = [placemark.addressDictionary[(NSString *)kABPersonAddressStateKey] hasValue] ? placemark.addressDictionary[(NSString *)kABPersonAddressStateKey] : @"";
+        if (!SS_STRINGHASVALUE(administrativeArea)) {
+            administrativeArea = SS_STRINGHASVALUE(placemark.addressDictionary[(NSString *)kABPersonAddressStateKey]) ? placemark.addressDictionary[(NSString *)kABPersonAddressStateKey] : @"";
         }
         
         // 市 eg:北京市市辖区、长沙市
         NSString *locality = placemark.locality;
-        if (![locality hasValue]) {
-            locality = [placemark.addressDictionary[(NSString *)kABPersonAddressCityKey] hasValue] ? placemark.addressDictionary[(NSString *)kABPersonAddressCityKey] : @"";
+        if (!SS_STRINGHASVALUE(locality)) {
+            locality = SS_STRINGHASVALUE(placemark.addressDictionary[(NSString *)kABPersonAddressCityKey]) ? placemark.addressDictionary[(NSString *)kABPersonAddressCityKey] : @"";
         }
-        self.city = [locality hasValue] ? locality : administrativeArea;
+        self.city = SS_STRINGHASVALUE(locality) ? locality : administrativeArea;
         
         // 区 eg:朝阳区
-        NSString *subLocality = [placemark.subLocality hasValue] ? placemark.subLocality : @"";
+        NSString *subLocality = SS_STRINGHASVALUE(placemark.subLocality) ? placemark.subLocality : @"";
         
         // 街道 eg:酒仙桥中路
-        NSString *thoroughfare = [placemark.thoroughfare hasValue] ? placemark.thoroughfare : @"";
+        NSString *thoroughfare = SS_STRINGHASVALUE(placemark.thoroughfare) ? placemark.thoroughfare : @"";
         
         //subThoroughfare为街道相关信息、例如门牌等 eg: 6878号
-        if ([placemark.subThoroughfare hasValue]) {
+        if (SS_STRINGHASVALUE(placemark.subThoroughfare)) {
             thoroughfare = [thoroughfare stringByAppendingString:placemark.subThoroughfare];
         }
         
         //位置名 可能是建筑物名称(eg:星科大厦)，也有可能是地址全称(eg:中国上海市黄浦区南京东路街道人民广场延安东路)
-        NSString *name = [placemark.name hasValue] ? placemark.name : @"";
+        NSString *name = SS_STRINGHASVALUE(placemark.name) ? placemark.name : @"";
         
-        if ([thoroughfare hasValue] && [name hasSuffix:thoroughfare]) {
+        if (SS_STRINGHASVALUE(thoroughfare) && [name hasSuffix:thoroughfare]) {
             //如果name是地址全称，将其置空
             name = @"";
         }
@@ -197,13 +183,13 @@ static inline void wgs84ToGCJ_02WithLatitudeLongitude(double *lat, double *lon) 
     if (_city == city) {
         return;
     }
-    
     if ([city hasSuffix:@"市市辖区"]) {
         city = [city substringToIndex:([city rangeOfString:@"市市辖区"]).location];
     }
     else if ([city hasSuffix:@"市"]) {
         if (city.length > 2) {
-            city = [city substringToIndex:([city rangeOfString:@"市"]).location];
+            //city = [city substringToIndex:([city rangeOfString:@"市"]).location];
+            city = [city substringToIndex:city.length - 1];
         }
     }
     
