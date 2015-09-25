@@ -1,0 +1,446 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0B798DA8810A25B95FA6F8877DD88C3C /* INTULocationManager-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DB8123FD833D01B2A0FEDF672C14810E /* INTULocationManager-dummy.m */; };
+		32E62F54E8AAE9408F23ED9EE28CBC53 /* INTULocationManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 4E077C9CDC5315B294D1A0A72C1D5663 /* INTULocationManager.h */; };
+		576609F5FE0CD0D41F4D338C152474E4 /* INTULocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 261EE3F55B149E6F0FDCC1D5F4ADC9A3 /* INTULocationManager.m */; };
+		760797855A3F9ABB64D98C0F70C5DFBC /* INTULocationManager+Internal.h in Headers */ = {isa = PBXBuildFile; fileRef = 02CAE8A5E77C3D0A9F88DB4BE6DCAA58 /* INTULocationManager+Internal.h */; };
+		801017E3A980A59685FAE1FCBA622FAA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F87D4B34FE2DAAB68141FD13874B93D /* Foundation.framework */; };
+		8A7BEB264C08C6985B25099E94C386A8 /* INTULocationRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 03B503EAF4DC56E53939BE9C41E0EEFA /* INTULocationRequest.m */; };
+		8B4BE73ECA794B26A3D810959AFA9EEA /* INTULocationRequestDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = DCC717D564B4E680099969A656E01FA3 /* INTULocationRequestDefines.h */; };
+		A7960A3E7E4B43D1C9F401D644F338E8 /* Pods-eLongLocationManager-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 427F45EE623B372198FA73A5C7C764A5 /* Pods-eLongLocationManager-dummy.m */; };
+		BCF677B8000F80A32E26DF051B73E255 /* INTULocationRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 27324CEDE3B630B33926AF0B97534AE4 /* INTULocationRequest.h */; };
+		D2D6FD4A63AEF8787E5B750E4C78DE54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F87D4B34FE2DAAB68141FD13874B93D /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4B1CFC7B20BBBD5D2892A1339F05D670 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2E8874C151C7E3368571C3C55FCC9AEA;
+			remoteInfo = INTULocationManager;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		02CAE8A5E77C3D0A9F88DB4BE6DCAA58 /* INTULocationManager+Internal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "INTULocationManager+Internal.h"; path = "LocationManager/INTULocationManager/INTULocationManager+Internal.h"; sourceTree = "<group>"; };
+		03B503EAF4DC56E53939BE9C41E0EEFA /* INTULocationRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = INTULocationRequest.m; path = LocationManager/INTULocationManager/INTULocationRequest.m; sourceTree = "<group>"; };
+		1CDC5EA5CD64F7574A3E61BCDC2F0C41 /* Pods-eLongLocationManager-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-eLongLocationManager-acknowledgements.markdown"; sourceTree = "<group>"; };
+		261EE3F55B149E6F0FDCC1D5F4ADC9A3 /* INTULocationManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = INTULocationManager.m; path = LocationManager/INTULocationManager/INTULocationManager.m; sourceTree = "<group>"; };
+		27324CEDE3B630B33926AF0B97534AE4 /* INTULocationRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = INTULocationRequest.h; path = LocationManager/INTULocationManager/INTULocationRequest.h; sourceTree = "<group>"; };
+		427F45EE623B372198FA73A5C7C764A5 /* Pods-eLongLocationManager-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-eLongLocationManager-dummy.m"; sourceTree = "<group>"; };
+		4E077C9CDC5315B294D1A0A72C1D5663 /* INTULocationManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = INTULocationManager.h; path = LocationManager/INTULocationManager/INTULocationManager.h; sourceTree = "<group>"; };
+		502BA59794BDF1F047B60A63569FEC14 /* INTULocationManager-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "INTULocationManager-Private.xcconfig"; sourceTree = "<group>"; };
+		71BA8116FA9540E9B2A69383CBDA2C7E /* Pods-eLongLocationManager.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-eLongLocationManager.debug.xcconfig"; sourceTree = "<group>"; };
+		7F87D4B34FE2DAAB68141FD13874B93D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		8D6F4F3999E82B0126E30FA9EA8C8AC2 /* libPods-eLongLocationManager.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-eLongLocationManager.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC1F11E685A840380BC7AAEA02967CE6 /* INTULocationManager-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "INTULocationManager-prefix.pch"; sourceTree = "<group>"; };
+		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		CCD760F75ADD099C1B129D22CD130F2F /* Pods-eLongLocationManager.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-eLongLocationManager.release.xcconfig"; sourceTree = "<group>"; };
+		D9DB906DA0C9302BB703557DDE49065A /* Pods-eLongLocationManager-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-eLongLocationManager-resources.sh"; sourceTree = "<group>"; };
+		DB8123FD833D01B2A0FEDF672C14810E /* INTULocationManager-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "INTULocationManager-dummy.m"; sourceTree = "<group>"; };
+		DCC717D564B4E680099969A656E01FA3 /* INTULocationRequestDefines.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = INTULocationRequestDefines.h; path = LocationManager/INTULocationManager/INTULocationRequestDefines.h; sourceTree = "<group>"; };
+		ED4B7F8282105FE853FB3DA6FD949E4F /* Pods-eLongLocationManager-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-eLongLocationManager-acknowledgements.plist"; sourceTree = "<group>"; };
+		F5137D28AA06FAB7CBECC7A518E570F6 /* INTULocationManager.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = INTULocationManager.xcconfig; sourceTree = "<group>"; };
+		FF29905DBE5C4217F22823F8E556C47B /* libINTULocationManager.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libINTULocationManager.a; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		12C8B147A839B9C42BE4CFCF2C17A0CB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				801017E3A980A59685FAE1FCBA622FAA /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13A9AA52A97D2E255C7B8F50A164A1CC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2D6FD4A63AEF8787E5B750E4C78DE54 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2A28E16EE25406A506E4077D03488AE6 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				3FC6F688F4BE58809EBBC47578D6EF4F /* Pods-eLongLocationManager */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		3FC6F688F4BE58809EBBC47578D6EF4F /* Pods-eLongLocationManager */ = {
+			isa = PBXGroup;
+			children = (
+				1CDC5EA5CD64F7574A3E61BCDC2F0C41 /* Pods-eLongLocationManager-acknowledgements.markdown */,
+				ED4B7F8282105FE853FB3DA6FD949E4F /* Pods-eLongLocationManager-acknowledgements.plist */,
+				427F45EE623B372198FA73A5C7C764A5 /* Pods-eLongLocationManager-dummy.m */,
+				D9DB906DA0C9302BB703557DDE49065A /* Pods-eLongLocationManager-resources.sh */,
+				71BA8116FA9540E9B2A69383CBDA2C7E /* Pods-eLongLocationManager.debug.xcconfig */,
+				CCD760F75ADD099C1B129D22CD130F2F /* Pods-eLongLocationManager.release.xcconfig */,
+			);
+			name = "Pods-eLongLocationManager";
+			path = "Target Support Files/Pods-eLongLocationManager";
+			sourceTree = "<group>";
+		};
+		53F661C0CA7190D2CF05023FB33D61E4 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				7F87D4B34FE2DAAB68141FD13874B93D /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		7D82B602C7ABA6E2BF034C589BF3E9FA /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				F5137D28AA06FAB7CBECC7A518E570F6 /* INTULocationManager.xcconfig */,
+				502BA59794BDF1F047B60A63569FEC14 /* INTULocationManager-Private.xcconfig */,
+				DB8123FD833D01B2A0FEDF672C14810E /* INTULocationManager-dummy.m */,
+				AC1F11E685A840380BC7AAEA02967CE6 /* INTULocationManager-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/INTULocationManager";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				AA6C23A3F8A5CC3A23B6053633B6CE74 /* Pods */,
+				CCA510CFBEA2D207524CDA0D73C3B561 /* Products */,
+				2A28E16EE25406A506E4077D03488AE6 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		82EB0411520824E4BD81EC423DD62012 /* INTULocationManager */ = {
+			isa = PBXGroup;
+			children = (
+				4E077C9CDC5315B294D1A0A72C1D5663 /* INTULocationManager.h */,
+				261EE3F55B149E6F0FDCC1D5F4ADC9A3 /* INTULocationManager.m */,
+				02CAE8A5E77C3D0A9F88DB4BE6DCAA58 /* INTULocationManager+Internal.h */,
+				27324CEDE3B630B33926AF0B97534AE4 /* INTULocationRequest.h */,
+				03B503EAF4DC56E53939BE9C41E0EEFA /* INTULocationRequest.m */,
+				DCC717D564B4E680099969A656E01FA3 /* INTULocationRequestDefines.h */,
+				7D82B602C7ABA6E2BF034C589BF3E9FA /* Support Files */,
+			);
+			path = INTULocationManager;
+			sourceTree = "<group>";
+		};
+		AA6C23A3F8A5CC3A23B6053633B6CE74 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				82EB0411520824E4BD81EC423DD62012 /* INTULocationManager */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				53F661C0CA7190D2CF05023FB33D61E4 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CCA510CFBEA2D207524CDA0D73C3B561 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FF29905DBE5C4217F22823F8E556C47B /* libINTULocationManager.a */,
+				8D6F4F3999E82B0126E30FA9EA8C8AC2 /* libPods-eLongLocationManager.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		C172048186E560567B6A0A1FF952F4BC /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				760797855A3F9ABB64D98C0F70C5DFBC /* INTULocationManager+Internal.h in Headers */,
+				32E62F54E8AAE9408F23ED9EE28CBC53 /* INTULocationManager.h in Headers */,
+				BCF677B8000F80A32E26DF051B73E255 /* INTULocationRequest.h in Headers */,
+				8B4BE73ECA794B26A3D810959AFA9EEA /* INTULocationRequestDefines.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		1570B5D9BD1EB3B2984D41DA2A834296 /* Pods-eLongLocationManager */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D71521D4B30E16DD003EF4920D86667D /* Build configuration list for PBXNativeTarget "Pods-eLongLocationManager" */;
+			buildPhases = (
+				138B433C944202CC95309A340089A97F /* Sources */,
+				12C8B147A839B9C42BE4CFCF2C17A0CB /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8768E5102A8D50D9F714EEC448166677 /* PBXTargetDependency */,
+			);
+			name = "Pods-eLongLocationManager";
+			productName = "Pods-eLongLocationManager";
+			productReference = 8D6F4F3999E82B0126E30FA9EA8C8AC2 /* libPods-eLongLocationManager.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		2E8874C151C7E3368571C3C55FCC9AEA /* INTULocationManager */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CBF47BF183C9FC233D4B22F244E88626 /* Build configuration list for PBXNativeTarget "INTULocationManager" */;
+			buildPhases = (
+				F3E48E44033CA864FF8B53A9930137D1 /* Sources */,
+				13A9AA52A97D2E255C7B8F50A164A1CC /* Frameworks */,
+				C172048186E560567B6A0A1FF952F4BC /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = INTULocationManager;
+			productName = INTULocationManager;
+			productReference = FF29905DBE5C4217F22823F8E556C47B /* libINTULocationManager.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = CCA510CFBEA2D207524CDA0D73C3B561 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2E8874C151C7E3368571C3C55FCC9AEA /* INTULocationManager */,
+				1570B5D9BD1EB3B2984D41DA2A834296 /* Pods-eLongLocationManager */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		138B433C944202CC95309A340089A97F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A7960A3E7E4B43D1C9F401D644F338E8 /* Pods-eLongLocationManager-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F3E48E44033CA864FF8B53A9930137D1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0B798DA8810A25B95FA6F8877DD88C3C /* INTULocationManager-dummy.m in Sources */,
+				576609F5FE0CD0D41F4D338C152474E4 /* INTULocationManager.m in Sources */,
+				8A7BEB264C08C6985B25099E94C386A8 /* INTULocationRequest.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8768E5102A8D50D9F714EEC448166677 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = INTULocationManager;
+			target = 2E8874C151C7E3368571C3C55FCC9AEA /* INTULocationManager */;
+			targetProxy = 4B1CFC7B20BBBD5D2892A1339F05D670 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		6569F07DC21AD8B72752685013E3D9D8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		74695EA4CD2417C91B7CA2ACF26BEE22 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 71BA8116FA9540E9B2A69383CBDA2C7E /* Pods-eLongLocationManager.debug.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		9735CE4B1AA03CF1840D6914D453747E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CCD760F75ADD099C1B129D22CD130F2F /* Pods-eLongLocationManager.release.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		A14E2444F162A20E3776820E0ADFFB52 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AD9BAB0C7E080915B8425B22659712FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 502BA59794BDF1F047B60A63569FEC14 /* INTULocationManager-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/INTULocationManager/INTULocationManager-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		AFEC065788D0C791EB737DF0C36B7368 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 502BA59794BDF1F047B60A63569FEC14 /* INTULocationManager-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/INTULocationManager/INTULocationManager-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6569F07DC21AD8B72752685013E3D9D8 /* Debug */,
+				A14E2444F162A20E3776820E0ADFFB52 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CBF47BF183C9FC233D4B22F244E88626 /* Build configuration list for PBXNativeTarget "INTULocationManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AFEC065788D0C791EB737DF0C36B7368 /* Debug */,
+				AD9BAB0C7E080915B8425B22659712FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D71521D4B30E16DD003EF4920D86667D /* Build configuration list for PBXNativeTarget "Pods-eLongLocationManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				74695EA4CD2417C91B7CA2ACF26BEE22 /* Debug */,
+				9735CE4B1AA03CF1840D6914D453747E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

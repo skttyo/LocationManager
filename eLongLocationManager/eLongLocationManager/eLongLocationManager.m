@@ -11,6 +11,8 @@
 
 @interface eLongLocationManager ()
 @property (nonatomic, strong) INTULocationManager *locationManager;
+@property (nonatomic, strong) eLongLocation *mostRecentLocation;
+
 @end
 
 @implementation eLongLocationManager
@@ -47,6 +49,7 @@
                                                      timeout:(NSTimeInterval)timeout
                                         delayUntilAuthorized:(BOOL)delayUntilAuthorized
                                                        block:(eLongLocationRequestBlock)block {
+    __weak __typeof(self)weakSelf = self;
     return [self.locationManager requestLocationWithDesiredAccuracy:(INTULocationAccuracy)desiredAccuracy timeout:timeout delayUntilAuthorized:delayUntilAuthorized block:^(CLLocation *currentLocation, INTULocationAccuracy achievedAccuracy, INTULocationStatus status) {
         if (currentLocation && status == INTULocationStatusSuccess) {
             eLongLocation *processedLocation = [[eLongLocation alloc] initWithCLLocation:currentLocation];
@@ -56,6 +59,7 @@
                     block(currentLocation, nil, (eLongLocationAccuracy)achievedAccuracy, (eLongLocationStatus)status);
                 }
                 else {
+                    weakSelf.mostRecentLocation = weakProcessedLocation;
                     block(currentLocation, weakProcessedLocation, (eLongLocationAccuracy)achievedAccuracy, (eLongLocationStatus)status);
                 }
             };
@@ -67,6 +71,7 @@
 }
 
 - (eLongLocationRequestID)subscribeToLocationUpdatesWithBlock:(eLongLocationRequestBlock)block {
+    __weak __typeof(self)weakSelf = self;
     return [self.locationManager subscribeToLocationUpdatesWithBlock:^(CLLocation *currentLocation, INTULocationAccuracy achievedAccuracy, INTULocationStatus status) {
         if (currentLocation && status == INTULocationStatusSuccess) {
             eLongLocation *processedLocation = [[eLongLocation alloc] initWithCLLocation:currentLocation];
@@ -76,6 +81,7 @@
                     block(currentLocation, nil, (eLongLocationAccuracy)achievedAccuracy, (eLongLocationStatus)status);
                 }
                 else {
+                    weakSelf.mostRecentLocation = weakProcessedLocation;
                     block(currentLocation, weakProcessedLocation, (eLongLocationAccuracy)achievedAccuracy, (eLongLocationStatus)status);
                 }
             };

@@ -18,11 +18,13 @@
 
 + (instancetype)sharedInstance;
 
+@property (nonatomic, readonly) eLongLocation *mostRecentLocation;
+
 /**
  *  一次性定位，定位完成则关闭定位服务，等待用户授权完才开始timeout
  *
- *  @param desiredAccuracy 在测试时达到的最好精度是65.00m，在“崔各庄”定位的精度大于1000m,所以这里一般传eLongLocationAccuracyCity（精度5000米），但此框架用的真正“定位精度”为： CLLocationManager.desiredAccuracy = kCLLocationAccuracyBest
- *  @param timeout         因为要进行地理反编码，所以真实的timeout会稍微大点
+ *  @param desiredAccuracy
+ *  @param timeout         因为要进行地理反编码，所以真实的timeout可能会稍微大点
  *  @param block           block description
  *
  *  @return <#return value description#>

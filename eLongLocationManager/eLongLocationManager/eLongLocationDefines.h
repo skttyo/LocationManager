@@ -40,7 +40,7 @@ typedef NS_ENUM(NSInteger, eLongLocationAccuracy) {
     eLongLocationAccuracyNone = INTULocationAccuracyNone,
     
     // The below options are valid desired accuracies.
-    /** 5000米 或更好 10分钟内有效（10分钟内再次定位，若满足精度则使用上次的定位结果） */
+    /** 5000米 或更好 10分钟内有效（最后一次定位到的CLLocation.timestamp距当前时间小于10分钟，则调用完成block） */
     eLongLocationAccuracyCity = INTULocationAccuracyCity,
     
     /** 1000米 或更好 5分钟内有效 */

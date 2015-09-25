@@ -15,9 +15,8 @@
 		00F3CC3D1B1481D90029994D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00F3CC3C1B1481D80029994D /* Images.xcassets */; };
 		00F3CC401B1481D90029994D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 00F3CC3E1B1481D90029994D /* LaunchScreen.xib */; };
 		00F3CC4C1B1481D90029994D /* eLongLocationManagerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00F3CC4B1B1481D90029994D /* eLongLocationManagerTests.m */; };
-		00F3CC5D1B1483B30029994D /* INTULocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 00F3CC591B1483B30029994D /* INTULocationManager.m */; };
-		00F3CC5E1B1483B30029994D /* INTULocationRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 00F3CC5B1B1483B30029994D /* INTULocationRequest.m */; };
 		00F3CC611B1483E90029994D /* eLongLocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 00F3CC601B1483E90029994D /* eLongLocationManager.m */; };
+		40B5163AB6250DF35B991EF0 /* libPods-eLongLocationManager.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 77E38C7C71CC6A685BA24731 /* libPods-eLongLocationManager.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,15 +45,12 @@
 		00F3CC451B1481D90029994D /* eLongLocationManagerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = eLongLocationManagerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00F3CC4A1B1481D90029994D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00F3CC4B1B1481D90029994D /* eLongLocationManagerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = eLongLocationManagerTests.m; sourceTree = "<group>"; };
-		00F3CC571B1483B30029994D /* INTULocationManager+Internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "INTULocationManager+Internal.h"; sourceTree = "<group>"; };
-		00F3CC581B1483B30029994D /* INTULocationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = INTULocationManager.h; sourceTree = "<group>"; };
-		00F3CC591B1483B30029994D /* INTULocationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = INTULocationManager.m; sourceTree = "<group>"; };
-		00F3CC5A1B1483B30029994D /* INTULocationRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = INTULocationRequest.h; sourceTree = "<group>"; };
-		00F3CC5B1B1483B30029994D /* INTULocationRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = INTULocationRequest.m; sourceTree = "<group>"; };
-		00F3CC5C1B1483B30029994D /* INTULocationRequestDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = INTULocationRequestDefines.h; sourceTree = "<group>"; };
 		00F3CC5F1B1483E90029994D /* eLongLocationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = eLongLocationManager.h; sourceTree = "<group>"; };
 		00F3CC601B1483E90029994D /* eLongLocationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = eLongLocationManager.m; sourceTree = "<group>"; };
 		00F3CC621B1484020029994D /* eLongLocationDefines.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = eLongLocationDefines.h; sourceTree = "<group>"; };
+		6CF773DE922AD27342129F57 /* Pods-eLongLocationManager.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-eLongLocationManager.debug.xcconfig"; path = "Pods/Target Support Files/Pods-eLongLocationManager/Pods-eLongLocationManager.debug.xcconfig"; sourceTree = "<group>"; };
+		77E38C7C71CC6A685BA24731 /* libPods-eLongLocationManager.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-eLongLocationManager.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B8048AF7A70295B059E83143 /* Pods-eLongLocationManager.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-eLongLocationManager.release.xcconfig"; path = "Pods/Target Support Files/Pods-eLongLocationManager/Pods-eLongLocationManager.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				40B5163AB6250DF35B991EF0 /* libPods-eLongLocationManager.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +78,8 @@
 				00F3CC2E1B1481D80029994D /* eLongLocationManager */,
 				00F3CC481B1481D90029994D /* eLongLocationManagerTests */,
 				00F3CC2D1B1481D80029994D /* Products */,
+				2753BB9720B0DC8B74CB073B /* Pods */,
+				7E2F3DE54B7F4025A9E11CD2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -138,7 +137,6 @@
 		00F3CC551B1483B30029994D /* eLongLocationManager */ = {
 			isa = PBXGroup;
 			children = (
-				00F3CC561B1483B30029994D /* INTULocationManager */,
 				00F3CC5F1B1483E90029994D /* eLongLocationManager.h */,
 				00F3CC601B1483E90029994D /* eLongLocationManager.m */,
 				00F3CC621B1484020029994D /* eLongLocationDefines.h */,
@@ -148,17 +146,21 @@
 			path = eLongLocationManager;
 			sourceTree = "<group>";
 		};
-		00F3CC561B1483B30029994D /* INTULocationManager */ = {
+		2753BB9720B0DC8B74CB073B /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				00F3CC571B1483B30029994D /* INTULocationManager+Internal.h */,
-				00F3CC581B1483B30029994D /* INTULocationManager.h */,
-				00F3CC591B1483B30029994D /* INTULocationManager.m */,
-				00F3CC5A1B1483B30029994D /* INTULocationRequest.h */,
-				00F3CC5B1B1483B30029994D /* INTULocationRequest.m */,
-				00F3CC5C1B1483B30029994D /* INTULocationRequestDefines.h */,
+				6CF773DE922AD27342129F57 /* Pods-eLongLocationManager.debug.xcconfig */,
+				B8048AF7A70295B059E83143 /* Pods-eLongLocationManager.release.xcconfig */,
 			);
-			path = INTULocationManager;
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		7E2F3DE54B7F4025A9E11CD2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				77E38C7C71CC6A685BA24731 /* libPods-eLongLocationManager.a */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -168,9 +170,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 00F3CC4F1B1481D90029994D /* Build configuration list for PBXNativeTarget "eLongLocationManager" */;
 			buildPhases = (
+				5A564D4FEB07F68C747C359E /* Check Pods Manifest.lock */,
 				00F3CC281B1481D80029994D /* Sources */,
 				00F3CC291B1481D80029994D /* Frameworks */,
 				00F3CC2A1B1481D80029994D /* Resources */,
+				18AC9815B5B1CE2CC52BA880 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -257,15 +261,46 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		18AC9815B5B1CE2CC52BA880 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-eLongLocationManager/Pods-eLongLocationManager-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5A564D4FEB07F68C747C359E /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		00F3CC281B1481D80029994D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				00F3CC5D1B1483B30029994D /* INTULocationManager.m in Sources */,
 				002A1C341B15747700512BC9 /* eLongLocation.m in Sources */,
 				00F3CC351B1481D80029994D /* AppDelegate.m in Sources */,
-				00F3CC5E1B1483B30029994D /* INTULocationRequest.m in Sources */,
 				00A280551B15DEDE0015768F /* INTUViewController.m in Sources */,
 				00F3CC611B1483E90029994D /* eLongLocationManager.m in Sources */,
 				00F3CC321B1481D80029994D /* main.m in Sources */,
@@ -394,27 +429,29 @@
 		};
 		00F3CC501B1481D90029994D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6CF773DE922AD27342129F57 /* Pods-eLongLocationManager.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = eLongLocationManager/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "39ac3608-246e-4b99-a7fc-04646a355349";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
 		00F3CC511B1481D90029994D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B8048AF7A70295B059E83143 /* Pods-eLongLocationManager.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = eLongLocationManager/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "39ac3608-246e-4b99-a7fc-04646a355349";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};

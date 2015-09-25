@@ -112,6 +112,7 @@ static inline void wgs84ToGCJ_02WithLatitudeLongitude(double *lat, double *lon) 
         else {
             // 国外
             self.abroad = YES;
+            self.coordinate = self.rawLocation.coordinate;
         }
         
         // 省 eg:北京市、湖南省
